@@ -12,9 +12,9 @@ class AnimalAdapter(
     RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnimalViewHolder {
-        val itemTokenBinding = ItemAnimalBinding.inflate(LayoutInflater.from(parent.context))
+        val animalBinding = ItemAnimalBinding.inflate(LayoutInflater.from(parent.context))
 
-        return AnimalViewHolder(itemTokenBinding, onItemClick)
+        return AnimalViewHolder(animalBinding, onItemClick)
     }
 
     override fun onBindViewHolder(holder: AnimalViewHolder, position: Int) {
